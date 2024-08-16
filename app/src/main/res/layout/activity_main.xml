@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/studentView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="35dp"
+        android:layout_marginTop="10dp"
+        android:text="Student Name: Ayman Binti Yasin"
+        android:textSize="9pt" />
+
+    <TextView
+        android:id="@+id/txtID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="35dp"
+        android:layout_marginTop="50dp"
+        android:textSize="9pt"
+        android:text="Student ID: 301193273"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="90dp"
+        android:background="?android:attr/colorFocusedHighlight" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_weight=".70"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:layout_marginTop="120dp"
+        android:textSize="14pt"
+        android:textStyle="bold"
+        android:text="Stock Information" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="180dp"
+        android:text="INSERT STOCK (HARDCODE)"
+        android:backgroundTint="#8C969C"
+        android:textColor="@color/black"
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/gray"
+        android:text="Select Stock Symbol:" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="15dp">
+
+        <RadioButton
+            android:id="@+id/rdGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            android:text="GOOGL" />
+        <RadioButton
+            android:id="@+id/rdAmazon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            android:text="AMZN" />
+        <RadioButton
+            android:id="@+id/rdSsnlf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            android:text="SSNLF" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnDisplay"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="460dp"
+        android:text="Display Stock Info"
+        android:backgroundTint="#8C969C"
+        android:textColor="@color/black"
+        android:textSize="8pt" />
+    <TextView
+        android:id="@+id/txtViewStock"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        android:lines="4"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/gray"
+        android:text="Stock Info:" />
+
+
+
+</FrameLayout>
